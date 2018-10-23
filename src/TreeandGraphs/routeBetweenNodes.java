@@ -1,14 +1,9 @@
 package TreeandGraphs;
 
-/*	TODO:
- * 	MAKE NODES UNIQUE
- * 	MAKE WEIGHTED EDGES IN GRAPH
- * */
-
 /*Route Between Nodes: Given a directed graph, design an algorithm to find out whether there is a route between 
 two nodes. */
 
-public class routeBetweenNodes {
+public class routeBetweenNodes { 
 
 	public static boolean isConnected(MyNode node1, MyNode node2) {
 		Queue q = new Queue();
@@ -18,7 +13,7 @@ public class routeBetweenNodes {
 			MyNode r =  q.pop();
 			for(MyNode c : r.getVertices()) {
 				if(c==null) {
-//					continue;
+					//continue;
 					break;
 				}
 				if(c.isVisited() == false) {
@@ -45,3 +40,7 @@ public class routeBetweenNodes {
 		
 	}
 }
+/*	TODO:
+ * 	MAKE NODES UNIQUE
+ * 	MAKE WEIGHTED EDGES IN GRAPH
+ * */
