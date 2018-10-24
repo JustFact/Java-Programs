@@ -3,8 +3,8 @@ package TreeandGraphs;
 /*Route Between Nodes: Given a directed graph, design an algorithm to find out whether there is a route between 
 two nodes. */
 
-public class routeBetweenNodes { 
-
+public class routeBetweenNodes {
+	
 	public static boolean isConnected(MyNode node1, MyNode node2) {
 		Queue q = new Queue();
 		q.push(node1);

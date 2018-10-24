@@ -1,24 +1,27 @@
 package TreeandGraphs;
 
+import java.util.Random;
+
 /*Implementation of Binary Search Tree*/
 
 public class BST {
 	
 	static class Node{
-		String name;
+//		String name;
 		int data;
 		Node lchild;
 		Node rchild;
 		
 		Node(int data, String name){
 			this.data = data;
-			this.name = name;
+//			this.name = name;
 			lchild = null;
 			rchild = null;
 		}
 		
 		public String toString() {
-			return name+" "+data;
+//			return name+" "+data;
+			return ""+data;
 		}
 	}
 	
@@ -99,6 +102,16 @@ public class BST {
 	
 	public Node getRoot() {
 		return root;
+	}
+	
+	public void RandomTree(int nodes, int range) {
+//		BST tree = new BST();
+		while(nodes>0) {
+			Random r = new Random();
+			this.addNode(r.nextInt(range),"");
+			nodes--;
+		}
+//		return tree;
 	}
 	
 }
