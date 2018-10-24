@@ -1,3 +1,4 @@
+package StringManipulation;
 import java.util.*;
 public class MatrixZero {
 		static void MakeZero(int matrix[][], ArrayList<Integer> i, ArrayList<Integer> j) {

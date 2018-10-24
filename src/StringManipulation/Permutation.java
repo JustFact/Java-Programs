@@ -1,3 +1,4 @@
+package StringManipulation;
 public class Permutation {
 	boolean CheckP(String s1, String s2) {
 		

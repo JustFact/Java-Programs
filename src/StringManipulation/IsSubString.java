@@ -1,3 +1,4 @@
+package StringManipulation;
 import java.util.ArrayList;
 
 //"waterbottle" is a rotation of"erbottlewat")

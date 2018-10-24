@@ -1,3 +1,4 @@
+package StringManipulation;
 public class wordCompression {
 	static String compress(String sentence) {
 		StringBuilder s = new StringBuilder();

@@ -1,3 +1,4 @@
+package StringManipulation;
 
 public class PermutationPalindrome {
 		static boolean checkPP(String sentence) {

@@ -1,3 +1,4 @@
+package StringManipulation;
 import java.util.*;
 
 public class URLify {

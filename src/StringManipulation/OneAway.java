@@ -1,3 +1,4 @@
+package StringManipulation;
 
 /*
 pale, ple -> true

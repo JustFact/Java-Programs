@@ -13,8 +13,12 @@ public class A {
 		
 		
 		BST t = new BST();
-		t.RandomTree(8, 45);
+		t.RandomTree(90, 60);
 		t.inOrderTraverse(t.getRoot());
+		System.out.println();
+		t.preOrderTraverse(t.getRoot());
+		System.out.println();
+		t.postOrderTraverse(t.getRoot());
 		
 
 		

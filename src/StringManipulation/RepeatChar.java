@@ -1,3 +1,4 @@
+package StringManipulation;
 
 public class RepeatChar {
 	boolean CheckString(String sentence) {

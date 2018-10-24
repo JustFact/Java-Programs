@@ -1,3 +1,4 @@
+package StringManipulation;
 
 public class _RotateMatrix {
 		static void rotate(int a[][]) {
