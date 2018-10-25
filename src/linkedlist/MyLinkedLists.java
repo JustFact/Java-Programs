@@ -1,4 +1,4 @@
-package linkedlist;
+package LinkedList;
 
 public class MyLinkedLists {
 	public MyLinkedList next;

@@ -17,7 +17,7 @@ public class MinimalTree {
 		}
 	}
 	
-	static BST createBST(int arr[]){
+	public static BST createBST(int arr[]){
 		BST t = new BST();
 		int left = 0;
 		int right = arr.length-1;

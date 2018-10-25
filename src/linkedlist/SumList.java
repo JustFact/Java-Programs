@@ -1,4 +1,4 @@
-package linkedlist;
+package LinkedList;
 
 public class SumList {
 	static MyLinkedList Sum(MyLinkedList l1, MyLinkedList l2) {

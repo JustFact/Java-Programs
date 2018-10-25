@@ -9,6 +9,7 @@ public class BST {
 	static class Node{
 //		String name;
 		int data;
+		int height;
 		Node lchild;
 		Node rchild;
 		

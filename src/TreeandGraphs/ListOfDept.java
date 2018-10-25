@@ -1,7 +1,8 @@
 package TreeandGraphs;
 
 import java.util.ArrayList;
-import linkedlist.MyLinkedList;
+
+import LinkedList.MyLinkedList;
 
 /*
 List of Depths: Given a binary tree, design an algorithm which creates a linked list of all the nodes at each 

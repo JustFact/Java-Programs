@@ -1,4 +1,4 @@
-package linkedlist;
+package LinkedList;
 
 public class DeleteMiddle {
 	static boolean DeleteValue(MyLinkedList l) {
