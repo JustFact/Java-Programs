@@ -52,7 +52,7 @@ public class CheckBalanced {
 	}
 	
 	public static void main(String[] args) {
-		BST tree;
+		BST tree; 
 		int arr[] = {9,8,7};
 		tree = MinimalTree.createBST(arr);		//A balanced Tree
 		tree.RandomTree(3, 20);					//A Random Tree (May or may not be balanced)
