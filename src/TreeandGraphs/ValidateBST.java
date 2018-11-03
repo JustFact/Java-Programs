@@ -13,7 +13,7 @@ public class ValidateBST {
 
 	public static void main(String[] args) {
 		BST t = new BST();
-		t.randomBST(40, 40);
+		t.randomTree(20, 40);
 		System.out.println(validate(t.getRoot()));
 	}
 

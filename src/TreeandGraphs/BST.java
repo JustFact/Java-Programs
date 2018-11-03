@@ -28,6 +28,51 @@ public class BST {
 	
 	private Node root;
 	
+	void addTreeNode(int value) {
+		Node node = new Node(value, "node ");
+		if(root==null) {
+			root = node;
+		}else {
+			Node focus = root;
+			Random random_position = new Random();
+			while(true) {
+				if(focus.rchild!=null && focus.lchild!=null ) {
+					if(random_position.nextBoolean()) {
+						focus = focus.lchild;
+						//continue;
+					}else {
+						focus = focus.rchild;
+						//continue;
+					}
+				}
+				
+				if(focus.rchild==null && focus.lchild!=null){
+					if(random_position.nextBoolean()) {
+						focus = focus.lchild;
+						//continue;
+					}
+				}
+				
+				if(focus.rchild!=null && focus.lchild==null){
+					if(random_position.nextBoolean()) {
+						focus = focus.rchild;
+						//continue;
+					}
+				}
+				
+				if(random_position.nextBoolean()) {
+					focus.lchild = node;
+					System.out.println("added to left");
+					return;
+				}else {
+					focus.rchild = node;
+					System.out.println("added to right");
+					return;
+				}	
+			}
+		}
+	}
+	
 	void addNode(int value, String name) {
 		Node node  = new Node(value, name);
 		if(root==null) {
@@ -106,9 +151,17 @@ public class BST {
 	}
 	
 	public void randomBST(int nodes, int range) {
-		while(nodes>0) {
+		while(nodes>=0) {
 			Random r = new Random();
 			this.addNode(r.nextInt(range),"");
+			nodes--;
+		}
+	}
+	
+	public void randomTree(int nodes, int range) {
+		while(nodes>=0) {
+			Random r = new Random();
+			this.addTreeNode(r.nextInt(range));
 			nodes--;
 		}
 	}
