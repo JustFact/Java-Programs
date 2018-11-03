@@ -106,13 +106,11 @@ public class BST {
 	}
 	
 	public void RandomTree(int nodes, int range) {
-//		BST tree = new BST();
 		while(nodes>0) {
 			Random r = new Random();
 			this.addNode(r.nextInt(range),"");
 			nodes--;
 		}
-//		return tree;
 	}
 	
 }
