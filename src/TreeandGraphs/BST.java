@@ -105,7 +105,7 @@ public class BST {
 		return root;
 	}
 	
-	public void RandomTree(int nodes, int range) {
+	public void randomBST(int nodes, int range) {
 		while(nodes>0) {
 			Random r = new Random();
 			this.addNode(r.nextInt(range),"");

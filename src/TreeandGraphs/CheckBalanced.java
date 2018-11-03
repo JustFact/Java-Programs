@@ -55,7 +55,7 @@ public class CheckBalanced {
 		BST tree; 
 		int arr[] = {9,8,7};
 		tree = MinimalTree.createBST(arr);		//A balanced Tree
-		tree.RandomTree(3, 20);					//A Random Tree (May or may not be balanced)
+		tree.randomBST(3, 20);					//A Random Tree (May or may not be balanced)
 		
 		System.out.println("In Order Traversal:");
 		tree.inOrderTraverse(tree.getRoot());
