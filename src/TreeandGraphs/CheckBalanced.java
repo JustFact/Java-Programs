@@ -38,7 +38,7 @@ public class CheckBalanced {
 		
 		if((balancing_factor<-1||balancing_factor>1)) {
 			return false;
-		}else if(root.lchild!=null||root.rchild!=null) {
+		}else {
 			
 			if(root.lchild!=null) {
 				checkBalance(root.lchild);
@@ -55,7 +55,8 @@ public class CheckBalanced {
 		BST tree; 
 		int arr[] = {9,8,7};
 		tree = MinimalTree.createBST(arr);		//A balanced Tree
-		tree.randomBST(3, 20);					//A Random Tree (May or may not be balanced)
+		tree.randomBST(3, 20);					//A Random BST Tree (May or may not be balanced)
+//		tree.randomTree(3, 40); 				//A Random Tree (not balanced)
 		
 		System.out.println("In Order Traversal:");
 		tree.inOrderTraverse(tree.getRoot());

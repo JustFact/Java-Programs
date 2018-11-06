@@ -62,11 +62,11 @@ public class BST {
 				
 				if(random_position.nextBoolean()) {
 					focus.lchild = node;
-					System.out.println("added to left");
+//					System.out.println("added to left");
 					return;
 				}else {
 					focus.rchild = node;
-					System.out.println("added to right");
+//					System.out.println("added to right");
 					return;
 				}	
 			}
