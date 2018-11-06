@@ -2,6 +2,7 @@ package TreeandGraphs;
 
 /*
  * Validate BST: Implement a function to check if a binary tree is a binary search tree. 
+ * [NOTE : Root and the right nodes can have duplicate values, i.e. root.data can be equal to root.right.data]
  * */
 
 public class ValidateBST {
