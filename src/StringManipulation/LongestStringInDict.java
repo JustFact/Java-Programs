@@ -25,15 +25,16 @@ public class LongestStringInDict {
 	}
 	
 	static String FindLongest(String input, String[] dict) {
-		String big_word = "";
+		StringBuilder big_word = new StringBuilder("");
 		for(String current_word : dict) {
 			if(isSubSequence(input, current_word)) {
 				if(current_word.length()>big_word.length()) {
-					big_word = current_word;
+					big_word.setLength(0);
+					big_word.append(current_word);
 				}
 			}
 		}
-		return big_word;
+		return big_word.toString();
 	}
 
 	public static void main(String[] args) {
