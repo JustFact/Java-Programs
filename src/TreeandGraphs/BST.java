@@ -28,7 +28,7 @@ public class BST {
 	
 	private Node root;
 	
-	void addTreeNode(int value) {
+	void addRandomTreeNode(int value) {
 		Node node = new Node(value, "node ");
 		if(root==null) {
 			root = node;
@@ -161,7 +161,7 @@ public class BST {
 	public void randomTree(int nodes, int range) {
 		while(nodes>=0) {
 			Random r = new Random();
-			this.addTreeNode(r.nextInt(range));
+			this.addRandomTreeNode(r.nextInt(range));
 			nodes--;
 		}
 	}

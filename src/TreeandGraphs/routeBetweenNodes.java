@@ -23,7 +23,6 @@ public class routeBetweenNodes {
 				if(c==node2){
 					return true;
 				}
-				
 			}
 		}
 		return false;

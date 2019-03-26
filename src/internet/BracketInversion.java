@@ -8,6 +8,7 @@ import java.util.ArrayList;
  * */
 
 public class BracketInversion {
+	
 	static String correct(String str) {
 		if(str.length()%2!=0) {
 			return "String is not valid";
@@ -27,8 +28,9 @@ public class BracketInversion {
 //		System.out.println((fbrac)/2);
 		return ""+((fbrac)/2);
 	}
+	
 	public static void main(String[] args) {
-		String str = "{}{{}}{{{}}{";
+		String str = "{}{{}}{{{}}{{";
 		System.out.println(correct(str));
 	}
 
